@@ -1,0 +1,64 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #0d1117;
+}
+
+.header {
+  background: #1a1a2e;
+  border-bottom: 2px solid #e94560;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #e2e2e2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.logoAccent {
+  color: #e94560;
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navBtn {
+  background: transparent;
+  color: #a8b2d8;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 0.45rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transition: all 0.2s;
+}
+
+.navBtn:hover {
+  color: #e2e2e2;
+  border-color: #e94560;
+}
+
+.navBtn.active {
+  background: #e94560;
+  color: #fff;
+  border-color: #e94560;
+}
+
+.main {
+  flex: 1;
+}

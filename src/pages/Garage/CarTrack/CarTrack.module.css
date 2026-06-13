@@ -1,0 +1,158 @@
+.row {
+  border-bottom: 1px solid #1a3a5c;
+  padding: 0.5rem 0;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.name {
+  color: #e2e2e2;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-left: 0.3rem;
+}
+
+.btnSelect {
+  background: #0f3460;
+  color: #e2e2e2;
+  border: 1px solid #1a4a7a;
+  border-radius: 4px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btnSelect:hover:not(:disabled) {
+  background: #1a5276;
+}
+
+.btnSelect:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btnDelete {
+  background: #641e16;
+  color: #e2e2e2;
+  border: 1px solid #922b21;
+  border-radius: 4px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btnDelete:hover:not(:disabled) {
+  background: #922b21;
+}
+
+.btnDelete:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: #0a1628;
+  border-radius: 8px;
+  border: 1px solid #1a3a5c;
+  height: 56px;
+  overflow: hidden;
+  padding: 0 0.5rem;
+}
+
+.engineBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.btnA {
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  width: 22px;
+  height: 18px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btnA:hover:not(:disabled) {
+  background: #1e8449;
+}
+
+.btnA:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btnB {
+  background: #c0392b;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  width: 22px;
+  height: 18px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btnB:hover:not(:disabled) {
+  background: #922b21;
+}
+
+.btnB:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.car {
+  position: absolute;
+  left: 36px;
+  display: flex;
+  align-items: center;
+  will-change: transform;
+}
+
+.broken {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+}
+
+.flag {
+  position: absolute;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (max-width: 500px) {
+  .track {
+    height: 48px;
+  }
+
+  .name {
+    font-size: 0.8rem;
+  }
+}

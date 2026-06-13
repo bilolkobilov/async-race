@@ -1,0 +1,90 @@
+.winners {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.title {
+  color: #e94560;
+  font-size: 1.8rem;
+  margin: 0 0 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.loading {
+  color: #a8b2d8;
+  text-align: center;
+  padding: 2rem;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  color: #a8b2d8;
+  text-align: center;
+  gap: 0.75rem;
+}
+
+.emptyIcon {
+  font-size: 3rem;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid #1a3a5c;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.th {
+  background: #0f3460;
+  color: #a8b2d8;
+  padding: 0.8rem 1rem;
+  text-align: left;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.sortable:hover {
+  color: #e94560;
+}
+
+.sortIcon {
+  margin-left: 4px;
+  color: #e94560;
+}
+
+.tr:nth-child(even) {
+  background: #0a1628;
+}
+
+.tr:nth-child(odd) {
+  background: #0d1f3c;
+}
+
+.tr:hover {
+  background: #0f3460;
+}
+
+.td {
+  padding: 0.7rem 1rem;
+  color: #e2e2e2;
+  vertical-align: middle;
+  border-bottom: 1px solid #1a3a5c;
+}
